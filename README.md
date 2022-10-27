@@ -1,10 +1,13 @@
-# [FastAPI & Stripe](https://github.com/app-generator/ecommerce-fastapi-stripe) `Mini eCommerce`
+# [FastAPI & Stripe](https://blog.appseed.us/fastapi-stripe-free-ecommerce/) `Mini eCommerce`
 
-Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the `templates directory` (no database required) and uses a decent UI for page styling - Powered by **FastAPI**.
+Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the `templates directory` (no database required) and uses a decent UI for page styling - Powered by **[FastAPI & Stripe](https://blog.appseed.us/fastapi-stripe-free-ecommerce/)**.
+<br />
+
+> 👉 [FastAPI & Stripe eCommerce](https://youtu.be/5kCE41duksk) - `Video Presentation`
 
 <br />
 
-> Roadmap & Features 
+### Roadmap & Features 
 
 | Status | Item | info | 
 | --- | --- | --- |
@@ -22,9 +25,13 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 
 <br />
 
-## ✨ Quick start in `Docker`
+## ✨ Manual Build
 
-> 👉 **Step 1** - Download the code from the GH repository (using `GIT`) 
+The process is basically the usual set up for any Python app: `environment` set up, `dependencies` install, and `bootstrap`. 
+
+<br />
+
+> 👉 **Step 1** - `Download the code` from the GH repository (using `GIT`) 
 
 ```bash
 $ git clone https://github.com/app-generator/ecommerce-fastapi-stripe.git
@@ -33,27 +40,14 @@ $ cd ecommerce-fastapi-stripe
 
 <br />
 
-> 👉 **Step 2** - Start the APP in `Docker`
-
-```bash
-$ docker-compose up --build 
-```
-
-Visit `http://localhost:5085` in your browser. The app should be up & running.
-
-<br />
-
-
-## Manual Build
-
-> 👉 Rename `env.sample` to `.env` and provide the Stripe Secrets
+> 👉 **Step 2** - Rename `env.sample` to `.env` and provide the Stripe Secrets
 
 - Edit `STRIPE_SECRET_KEY` - provided by Stripe Platform
 - Edit `STRIPE_PUBLISHABLE_KEY` - provided by Stripe Platform
 
 <br />
 
-> 👉 Install dependencies
+> 👉 **Step 3** - `Install dependencies`
 
 ```bash
 $ virtualenv env
@@ -63,11 +57,13 @@ $ pip install -r requirements.txt
 
 <br />
 
-> 👉 Start the App
+> 👉 **Step 4** - `Start the App`
 
 ```bash
 $ uvicorn src.app:app --reload
 ```
+
+Visit `http://localhost:8000` in your browser. For another port, use `--port 8099` directive.
 
 <br />
 
@@ -105,4 +101,4 @@ $ uvicorn src.app:app --reload
 <br />
 
 ---
-[FastAPI & Stripe](https://github.com/app-generator/ecommerce-fastapi-stripe) `Mini eCommerce` - Free sample provided by [AppSeed](https://appseed.us).
+[FastAPI & Stripe](https://blog.appseed.us/fastapi-stripe-free-ecommerce/) `Mini eCommerce` - Free sample provided by [AppSeed](https://appseed.us).
